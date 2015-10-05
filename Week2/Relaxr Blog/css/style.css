@@ -1,0 +1,150 @@
+/*
+Project Name: Relaxr Blog
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #2a3f52;
+     font-size: 12px;
+     line-height: 1.5;
+     font-family: "Open Sans",Helvetica, Arial, sans-serif;
+}
+
+div {
+  margin-bottom:40px;
+}
+
+section.blog-side div:last-child  {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+ul{
+
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+footer {
+
+}
+
+nav {
+  background: blue;
+  color: white;
+  padding: 30px;
+  font-size: 14px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+nav .logo {
+  font-size: 26px;
+  font-weight: 800;
+  float:left;
+}
+
+nav .links {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.blog-main {
+  float: left;
+  width: 64%;
+  padding: 2%;
+  border: 1px solid red;
+}
+
+article.post{
+  margin-bottom: 50px;
+  padding-bottom: 50px; 
+  border-bottom: 1px solid #eee;
+}
+
+article img {
+  width:100%;
+}
+
+.blog-side {
+  float:right;
+  width:30%;
+  padding:2%;
+  border: 1px solid red;
+}
+
+.ad-unit {
+  background: url("../images/ad-unit.png");
+  height:400px;
+  width:100%;
+  border:1px solid #eee;
+}
+
+
+
