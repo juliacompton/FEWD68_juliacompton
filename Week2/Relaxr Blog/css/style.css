@@ -44,6 +44,7 @@ Project Name: Relaxr Blog
 
 body {
      color: #2a3f52;
+     background: #f4f4f4;
      font-size: 12px;
      line-height: 1.5;
      font-family: "Open Sans",Helvetica, Arial, sans-serif;
@@ -89,7 +90,7 @@ footer {
 }
 
 nav {
-  background: blue;
+  background: #043048;
   color: white;
   padding: 30px;
   font-size: 14px;
@@ -111,40 +112,93 @@ nav ul li {
   display: inline-block;
   padding: 10px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 600;
+  letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  transition: color 500ms;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color:#63a8c6;
 }
 
 .blog-main {
   float: left;
   width: 64%;
   padding: 2%;
-  border: 1px solid red;
 }
 
 article.post{
   margin-bottom: 50px;
   padding-bottom: 50px; 
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 article img {
   width:100%;
+  margin-bottom: 20px;
+}
+
+.post a {
+  text-align: right;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:#043048;
+  text-transform: uppercase;
+}
+
+.post p.read-more {
+  text-align: right;
+  margin-top:20px;
 }
 
 .blog-side {
   float:right;
   width:30%;
   padding:2%;
-  border: 1px solid red;
+  border-left: 1px solid #e2e2e2;
+}
+
+.blog-side a {
+  text-align: right;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:#043048;
+  text-transform: uppercase;
+}
+
+.blog-side .side-link {
+  text-align: right;
+  margin-top: 15px;
 }
 
 .ad-unit {
-  background: url("../images/ad-unit.png");
+  background: no-repeat url("../images/ad-unit.png");
   height:400px;
   width:100%;
   border:1px solid #eee;
 }
 
+footer {
+  text-align: center;
+  background: #333;
+  color:white;
+}
 
+footer .logo {
+  font-size: 26px;
+  font-weight: 800;
+}
 
