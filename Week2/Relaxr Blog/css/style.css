@@ -191,14 +191,44 @@ article img {
   border:1px solid #eee;
 }
 
+.sign-up {
+  background: #f9e42d;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+button {
+  margin: 50px auto;
+  height: 40px;
+  width: 175px;
+  border-radius: 5px;
+  background: #043048;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color:white;
+  text-transform: uppercase;
+}
+
 footer {
   text-align: center;
   background: #333;
   color:white;
+  padding: 50px 0px;
 }
 
 footer .logo {
   font-size: 26px;
   font-weight: 800;
+  color: #f9e42d;
+}
+
+.social {
+  margin-bottom: 50px;
 }
 

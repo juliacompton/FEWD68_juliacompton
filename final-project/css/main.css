@@ -1,0 +1,205 @@
+/* border-box */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* fonts ? */
+
+@font-face {
+    font-family: "AkkuratRegular";
+    src: url("../fonts/lineto-akkurat-regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "AkkuratLight";
+    src: url("../fonts/lineto-akkurat-pro-light.woff") format('woff');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "AkkuratLightItalic";
+    src: url("../fonts/lineto-akkurat-pro-lightitalic.woff") format('woff');
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+@font-face {
+    font-family: "AkkuratBold";
+    src: url("../fonts/lineto-akkurat-pro-bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "AkkuratBoldItalic";
+    src: url("../fonts/awesome-font-boldoblique.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Mains */
+
+body {
+	background: #EEE;
+	font-family: 'AkkuratRegular', helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0;
+	border: solid black;
+	border-width: 120px 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+
+	.home {
+		background: url(../img/yes.jpg) no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+ 		-o-background-size: cover;
+ 		background-size: cover;
+		overflow: hidden;
+		background-size: cover;
+		z-index: -9999;
+
+	}
+
+	.about {
+		background: url(../img/jak.png) no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+ 		-o-background-size: cover;
+ 		background-size: cover;
+		overflow: hidden;
+		background-size: cover;
+		z-index: -9999;
+
+	}
+
+
+header {
+	/* background:rgba(0,0,0,.3); */
+    max-width: 2560px;
+    margin: 0 auto;
+    position: fixed;
+    top: 4em;
+    right: 3em;
+    left: 3em;
+    color: #333;
+}
+
+	.name {
+		float:left;
+		position: absolute;
+    	left: 0;
+    	top: 0;
+	}
+
+	.name a:hover {
+		color: white;
+		padding-top: 5px;
+		transition: color 0.5s ease-out;
+	}
+
+	.nav {
+		float: right;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	ul li{
+		display: inline-block;
+		padding-left: 2em;
+		font-weight: bold;
+	}
+
+	header a {
+		text-decoration: none;
+		color: #eee;
+	}
+
+	header a:hover {
+		color: DeepSkyBlue;
+		padding-top: 5px;
+		transition: color 0.5s ease-out;
+	}
+
+/* idk wtf 
+
+.wrap {
+	max-width: 2560px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+*/
+
+.corner {
+    position: fixed;
+    left: 3em;
+    bottom: 3em;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Here's where I give up organizing */
+
+
+
+
+
+
+
+
+
+
+
+
+--
