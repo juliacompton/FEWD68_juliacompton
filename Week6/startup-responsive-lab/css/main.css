@@ -1,4 +1,6 @@
-​*, *​:before, *:after {
+​
+
+*, *​:before, *:after {
  box-sizing: inherit;
 }
 
@@ -13,19 +15,16 @@
 }
 
 
+/* Desktop */
 
 body {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 12px;
 	width: 100%;
 	font-weight: 300;
-	line-height: 1.5em;
+	line-height: 18px;
 }
- /* work sans
 
-font-family: 'Work Sans', sans-serif;
-
-*/
 
 body.find {
 	background: black;
@@ -63,8 +62,7 @@ a:active {
 	color:green;
 }
 
-
-nav {
+header {
 	width: 100%;
 	background: #333;
 	border-bottom: 10px solid yellow;
@@ -72,7 +70,7 @@ nav {
 }
 
 
-nav h1 {
+header h1 {
 	float: left;
 	font-family: 'Inconsolata', serif;
 	font-weight: 400;
@@ -81,27 +79,45 @@ nav h1 {
 	padding: 25px;
 }
 
-nav ul {
+
+header ul {
 	float: right;
 	padding: 25px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
-ul li {
+
+header ul li {
 	display: inline-block;	
 	font-weight: 300;
 	padding-left: 15px;
 }
 
-nav ul li:nth-child(-n+2) a {
+
+header ul li:nth-child(-n+2) a {
 	font-weight: 500;
 	color:white;
 }
 
-nav a {
+
+header a {
 	text-decoration: none;
 	color: #cdcdcd;
+}
+
+#hamburger {
+	float:right;
+	display:none;
+	padding: 25px 0px;
+}
+
+#hamburger-icon{
+
+}
+
+header #mobile-nav {
+	display:none;
 }
 
 .small-banner {
@@ -159,7 +175,6 @@ button {
 
 
 .touts {
-    background: #EEE;
     background: white;
     overflow: hidden;
     padding: 2% 0;
@@ -168,19 +183,19 @@ button {
 .tout {
 	background: white;
 	float:left;
-	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15); 
 	width: 27.3333%;
     padding: 2% 3%;
 }
 
-
-.wrapper {
-    margin: 0 auto;
+footer {
+	height: 100px;
+	color: white;
+	background: #333;
+	padding: 2%;
 }
 
-.row {
-
-}
+/* Find a Dev / Designer Pages */
 
 .card {
 	background: white;
@@ -192,29 +207,115 @@ button {
 }
 
 
+/* responsive */
 
-
-footer {
-	height: 100px;
-	color: white;
-	background: #333;
-	padding: 2%;
+@media (max-width: 1000px) {
+	header #nav {
+		font-size: 9px;
+	}
 }
 
 
+@media (max-width: 830px) {
+	header #nav {
+		display: none;
+	}
+
+	header ul {
+		padding:25px 0px;
+	}
+
+	header ul li {
+	    display: block;
+	 }
 
 
+	#hamburger {
+		float:right;
+		display:inline-block;
+		right:20px;
+		padding-right: 2%;
+	}
+
+	#mobile-nav {
+		width: 100%;
+		background: #333;
+		border-bottom: 10px solid yellow;
+		height: auto;
+		display: none;
+		font-size: 1.25em;
+		line-height: 1.5em;
+		padding-left: 15px;
+	}
 
 
+	header #mobile-nav ul {
+		float: left;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		display: inline;
+		padding-top: 20px;
+
+	}
 
 
+	header #mobile-nav  ul li {
+		display: block;	
+	}	
 
-mobile 350 - 650
-dektop 980 -1200
+	.tagline {
+		display:none;
+	}
 
+	 .touts {
+   		background: white;
+    	overflow: hidden;
+    	padding: 2% 0;
+	}
 
+	.tout {
+		background: white;
+		display: block;
+		width: 90%;
+	    border-bottom: 1px #eee;
+	    box-shadow: none;
+	}
 
+	.main-banner {
+	    height: 350px;
+	    transition: 1s;
+	    width: 100%;
+	    background: url("../images/coworking.jpg") no-repeat center -150px fixed;
+	}
+	
+	.callout p:nth-child(2){
+		display:none;
+		position: relative;
+  		float: none;
+	}
+	
+	.callout {
+		width: 84%;
+		transition: 1s;
+		padding: 4%;
+	}
 
+	.callout p  {
+		font-size: 1.75em;
+		line-height: 1.25em;
+		
+	}
+
+	.callout button {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 480px) {
+  
+
+}
 
 
 

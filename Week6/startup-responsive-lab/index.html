@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang=”en”>
+
+<head>
+
+<meta charset=”UTF-8″> 
+
+ <title>Startup Matchmaker</title>
+
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/main.css">
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+ <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,500,800' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body> 
+
+<header>
+
+		<h1>Startup Matchmaker</h1>
+
+		<ul id="nav">
+			<li><a href="developers.html">FIND DEVELOPERS</a></li>
+			<li><a href="#">FIND DESIGNERS</a></li>
+			<li><a href="#">how it works</a></li>
+			<li><a href="#">our team</a></li>
+			<li><a href="#">blog</a></li>
+		</ul>
+
+		<div id="hamburger"> 
+			<img id="hamburger-icon" src="images/hamburger.png">
+		</div>
+
+		<ul id="mobile-nav">
+			<li><a href="developers.html">FIND DEVELOPERS</a></li>
+			<li><a href="#">FIND DESIGNERS</a></li>
+			<li><a href="#">how it works</a></li>
+			<li><a href="#">our team</a></li>
+			<li><a href="#">blog</a></li>
+		</ul>
+
+</header>	
+
+
+		<div class="small-banner cf">
+			<p class="tagline">Because two brains <del>taste</del> <ins>are</ins> better than one.</p>
+		</div>
+
+		<div class="main-banner">
+			<div class="callout">
+				<h2>Meet your Match!</h2>
+					<p>Have a great idea for a product, but need help making it a reality? We are here to help.</p>
+					<p>Startup Matchmaker is the best place for designers and developers to find each other.</p>
+
+					<button>CREATE A PROFILE</button>
+			</div>
+		</div>
+
+
+	
+	<section class="touts">
+		<section class="tout">
+
+			<h3>Create a Profile<h3>
+			<p>Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
+
+			<button>SIGN UP NOW</button>
+
+		</section>
+
+		<section class="tout">
+
+			<h3>Find a Developer<h3>
+			<p>Looking for a fantastic developer to work with on the next big thing? Look no further.</p>
+
+			<button>START YOUR SEARCH</button>
+				
+		</section>
+
+		<section class="tout">
+
+			<h3>Find a Designer<h3>
+			<p>Need someone who can make a product intuitive and appealing? Get ready.</p>
+
+			<button>START YOUR SEARCH</button>
+				
+		</section>		
+
+	</section>
+
+	<footer><p>&#xA9; 2013 Startup Matchmaker. Made in NY.</p></footer>
+
+<!-- NOTE: One thing I couldn't figure out — if I put this in my main.js file and linked it, it stopped working -->
+
+ <script>
+$( "#hamburger" ).click(function() {
+  $( "#mobile-nav" ).slideToggle( "slow" );
+});
+</script>
+
+
+</body> 
+
+</html> 
