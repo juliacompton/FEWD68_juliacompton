@@ -1,0 +1,104 @@
+/* border-box */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* fonts ? */
+
+@font-face {
+    font-family: "AkkuratRegular";
+    src: url("../fonts/lineto-akkurat-regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "AkkuratLight";
+    src: url("../fonts/lineto-akkurat-pro-light.woff") format('woff');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "AkkuratLightItalic";
+    src: url("../fonts/lineto-akkurat-pro-lightitalic.woff") format('woff');
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+@font-face {
+    font-family: "AkkuratBold";
+    src: url("../fonts/lineto-akkurat-pro-bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "AkkuratBoldItalic";
+    src: url("../fonts/awesome-font-boldoblique.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Mains */
+
+body {
+	background: #EEE;
+	font-family: 'AkkuratRegular', helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0;
+	border: solid black;
+	border-width: 120px 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+
+#menu {
+    width:200px;
+    height:50px;
+}
+
+
+
+
+
+
+
+
+
+
+--
